@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-DO List</title>
+
+    <style>
+        body{
+            display: flex;
+           justify-content: center;
+           align-items: center;
+            background:linear-gradient(135deg,#74ebd5,#9face6);
+        }
+        .main{
+            height: 600px;
+            width: 600px;
+            background-color: rgb(255, 255, 255);
+            margin-top: 50px;
+            border-radius: 20px ;
+            box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.788);
+            text-align: center;
+           
+        }
+
+
+        #input{
+            padding:10px 40px 10px 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+           font-size:16px;
+        }
+        #input:focus{
+         outline:none;
+     border-color:#4CAF50;
+       }
+
+        h1{
+            text-align: center;
+            margin-top: 40px;
+            color: #333;
+        }
+
+        .addbtn{
+            padding: 12px 20px;
+            color: rgb(255, 255, 255);
+            background-color: rgb(44, 165, 42);
+            border-radius: 8px;
+            border: none;
+            cursor:pointer;
+            font-weight:bold;
+        }
+        
+        .listcontent{
+            height: 400px;
+            width: 400px;
+            background-color: rgb(255, 255, 255);
+            margin-left: 75px;
+            margin-top: 30px;
+            text-align: start;
+        }
+
+
+        
+    </style>
+</head>
+<body>
+     <div class="main">
+       
+        <h1>To-Do List</h1>
+        <div  class="input-section">
+            <input id="input" type="text" placeholder="Enter a new task">
+             <button class="addbtn"onclick="add()">Add</button>
+             
+        </div>
+        <div id="tasks" class="listcontent">
+              <ul >
+                
+              </ul>
+        </div>
+       
+     </div>
+
+
+</body>
+
+<script>
+      let taskinput = document.getElementById("input")
+      let tasklists = document.getElementById("tasks")
+
+      function add(){
+          let content = document.createElement("li")
+
+          content.innerHTML="🚀 "+taskinput.value +"  "+ "<button style='padding: 8px;color: antiquewhite;background-color: brown;border-radius: 8px;border: none; ' onclick='del(event)'>Delete</button>"
+          tasklists.append(content)
+          content.style.backgroundColor = "#f0f4ff";
+          content.style.padding = "12px";
+          content.style.marginBottom = "10px";   // space between list items
+            content.style.borderRadius = "8px";
+           content.style.listStyle = "none";
+
+           content.style.display = "flex";
+           content.style.justifyContent = "space-between";
+          content.style.alignItems = "center";
+
+      }
+      function del(event){
+          event.target.parentElement.remove()
+            
+      }
+
+
+</script>
+</html>

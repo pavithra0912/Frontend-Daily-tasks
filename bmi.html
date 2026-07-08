@@ -1,0 +1,126 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: rgb(97, 97, 111);
+        }
+        #calculator{
+              
+              height: 500px;
+              width: 500px;
+              background-color: rgb(50, 55, 55);
+              color: white;
+              border: solid ;
+              border-color: black;
+             
+
+        }
+        #height{
+            display: block;
+            margin-top: 50px; 
+            padding: 20px 50px 10px 2px;
+            margin-left: 50px;
+        }
+        #weight{
+            display: block;
+            margin-top: 10px;
+            display: block;
+             margin-left: 50px;
+            padding: 20px 50px 10px 2px;
+        }
+        #btn{
+             margin-left: 50px;
+             border: none;
+             padding: 10px ;
+             color: white;
+             background-color:  rgb(20, 24, 24);
+             border-radius: 10px;
+             box-shadow: 2px 2px 2px black;
+        }
+        p{
+             margin-left: 50px;
+        }
+        .table1{
+            margin-top: 50px;
+        }
+        #category{
+            margin-left: 30px;
+        }
+
+    </style>
+
+</head>
+<body>
+    <div id="calculator"> 
+        <h1 style="margin-left: 20px;">BMI CALCULATOR</h1>
+        <div class="table1"></div>
+        <table>
+        <tr>
+        <td>
+        <input  id="height"type="text" placeholder="Enter your height">
+        </td>
+        </tr>
+        <tr>
+        <td>
+        <input id="weight" type="text" placeholder="Enter your font-weight">
+        </td>
+        </tr>
+        <tr><td>
+        <button id="btn" onclick="bmi()">Calculate</button>
+        </td>
+         </tr>
+         <tr>
+         <td>
+        <p id="result">BMI</p>
+        </td>
+        </tr>
+        <tr>
+            <td id="category">
+                <p>category</p>
+            </td>
+        </tr>
+        </table>
+
+        
+    </div>
+
+    <script>
+           
+            let heightinput=document.getElementById("height")
+            let weightinput = document.getElementById("weight")
+            let total = document.getElementById("result")
+            let report =document.getElementById("category")
+
+            
+
+            function bmi(){
+                heightinputvalue=heightinput.value
+               weightinputvalue=weightinput.value
+               total.textContent = (weightinputvalue/(heightinputvalue)**2)*10000
+               if(total.textContent >= 30.0){
+                 report.textContent=("obese")
+               }
+               else if(total.textContent >= 25.0 ){
+                  report.textContent=("overweight")
+               }
+               else if(total.textContent >= 18.5){
+                  report.textContent=("healthy weight")
+               }
+               else{
+                  report.textContent=("under weight")
+               }
+               }
+
+
+            
+
+
+    
+        </script>
+</body>
+</html>

@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bagora</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <style>
+        .category-img{
+    height: 180px;
+    object-fit: cover;
+     }
+     .product-img{
+    height: 250px;
+    object-fit: cover;
+}
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-warning ">
+  <div class="container-fluid  ">
+    <a class="navbar-brand me-5 ms-1 fw-bold fs-3" href="#">Bagora</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0-align-items-center ms-5">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#home">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#products">Shop</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#categories" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Categories
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Office bags</a></li>
+            <li><a class="dropdown-item" href="#">Tote bags</a></li>
+             <li><a class="dropdown-item" href="#">Handbags</a></li>
+              <li><a class="dropdown-item" href="#">Sling bags</a></li>
+               <li><a class="dropdown-item" href="#">Combo bags</a></li>
+                <li><a class="dropdown-item" href="#">Pack bags</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="">Bags on Sale</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link"  href="#sale">Deals</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link "  href="#contact">Contact</a>
+        </li>
+      </ul>
+<div>
+      <form class="d-flex " role="search">
+       <div class="position-relative" style="width:260px;">
+    <input
+        type="search"
+        class="form-control pe-5"
+        placeholder="Search">
+
+    <i class="bi bi-search position-absolute top-50 end-0 translate-middle-y me-3"></i>
+</div>
+<div>
+<a href="#" class="text-dark fs-5 ms-3"><i class="bi bi-heart"></i></a>
+          <a href="#" class="text-dark fs-5 position-relative ms-3">
+            <i class="bi bi-bag"></i>
+            <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger" style="font-size:.5rem">3</span>
+          </a>
+  </div>        <a href="#" class="text-dark fs-5 ms-3"><i class="bi bi-person"></i></a>
+</div>      
+        
+      </form>
+    </div>
+  </div>
+</nav>
+<!-- hero section -->
+<section class="bg-dark text-white text-center py-5">
+    <div class="container">
+        <h1 class="display-4 fw-bold py-4">Carry the world with you</h1>
+        <p style="font-size: 24px; font-weight: 300;">Trending now: grab yours</p>
+        <button class="btn btn-warning btn-lg py-2 px-3">Shop now</button>
+    </div>
+</section>
+
+<section class="bg-light text-dark py-5 g-3" id="categories">
+    <div class="container" >
+        <h1 class="text-center fw-bold">Categories</h1>
+        <div class="row row-cols-1 row-cols-md-4 g-3">
+  <div class="col">
+    <div class="card h-100 text-center shadow-sm border-0">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYwWnfdnK-hMDNwOh8JbXSUBS5USZpmBbW6A&s" class="card-img-top category-img" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Office bags</h5>
+        <p class="card-text">Where professional ambition meets everyday style.</p>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card h-100 text-center shadow-sm border-0">
+      <img src="https://www.shutterstock.com/image-photo/womens-luxury-handbag-yellow-purse-260nw-2463624999.jpg" class="card-img-top category-img" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Handbags</h5>
+        <p class="card-text">Where fashion meets functionality, beautifully.</p>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card h-100 text-center shadow-sm border-0">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNlIeQZBq8BwBHfhEYK_jFZB2QZhDxa05tIw&s" class="card-img-top category-img" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Sling bags</h5>
+        <p class="card-text">Your daily essentials, perfectly packed.</p>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card h-100 text-center shadow-sm border-0">
+      <img src="https://img.magnific.com/premium-psd/realistic-black-tote-bag-mockup-branding-product-display_1258715-239242.jpg?semt=ais_hybrid&w=740&q=80" class="card-img-top category-img" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Tote bags</h5>
+        <p class="card-text">The bag that says yes to packing extra.</p>
+      </div>
+    </div>
+  </div>
+</div>
+    </div>
+</section>
+<!-- products section -->
+<section class="bg-white text-dark pb-1 pt-4 g-4" id="products">
+    <h1 class="text-center" id="categories">Our Products</h1>
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+  <div class="col">
+    <div class="card h-100">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpo22pvyNq-vrBnZv2T-m1dgZ9z4Vg6kbeIQ&s" class="card-img-top product-img" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Mustard yellow handbag</h5>
+        <p class="card-text fw-bold">RS. 2000</p>
+        <button class="btn btn-primary">Add to Cart</button></p>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card h-100">
+      <img src="https://t3.ftcdn.net/jpg/18/27/88/36/360_F_1827883669_TvIP24PsFK4eQrRYhelAotBr1T9BbObM.jpg" class="card-img-top product-img" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Brown handbag</h5>
+        <p class="card-text"> <p class="card-text fw-bold">RS. 2500</p>
+        <button class="btn btn-primary">Add to Cart</button>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card h-100">
+      <img src="https://img.magnific.com/free-photo/fashionable-feminine-leather-lady-background_1203-6493.jpg?semt=ais_hybrid&w=740&q=80" class="card-img-top product-img" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Sling bag</h5>
+        <p class="card-text fw-bold">RS. 2000</p>
+        <button class="btn btn-primary">Add to Cart</button>
+      </div>
+    </div>
+  </div>
+  
+  
+ 
+</div>
+</section>
+ 
+<section class="bg-white text-dark py-1 mb-1 g-4">
+<div class="row row-cols-1 row-cols-md-3 g-4">
+  <div class="col">
+    <div class="card h-100">
+      <img src="https://img.magnific.com/premium-psd/realistic-black-tote-bag-mockup-branding-product-display_1258715-239242.jpg?semt=ais_hybrid&w=740&q=80" class="card-img-top product-img" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Tote bag</h5>
+        <p class="card-text fw-bold">RS. 700</p>
+        <button class="btn btn-primary">Add to Cart</button>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card h-100">
+      <img src="https://t4.ftcdn.net/jpg/01/10/04/51/360_F_110045173_QgmA3gg5OwTlLNQBqmPdFnkh6sPvsvt8.jpg" class="card-img-top product-img" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Handy sling bag</h5>
+        <p class="card-text fw-bold">RS. 2000</p>
+        <button class="btn btn-primary">Add to Cart</button>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card h-100">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbb13xbMpCFf3XGX_IYMEgtU8LNlcJ4zrmwA&s" class="card-img-top product-img" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Beige chain sling bag</h5>
+        <p class="card-text fw-bold">RS. 2000</p>
+        <button class="btn btn-primary">Add to Cart</button>
+      </div>
+    </div>
+  </div>
+  
+</div>
+</section>  
+<section class="bg-white text-dark py-1 mb-1 g-4">
+<div class="row row-cols-1 row-cols-md-3 g-4">
+  <div class="col">
+    <div class="card h-100">
+      <img src="https://images.unsplash.com/photo-1681747685985-a401c271156c?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8c2xpbmclMjBiYWd8ZW58MHx8MHx8fDA%3D" class="card-img-top product-img" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Sling bag</h5>
+        <p class="card-text fw-bold">RS. 1500</p>
+        <button class="btn btn-primary">Add to Cart</button>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card h-100">
+      <img src="https://www.shutterstock.com/image-photo/womens-green-handbag-on-white-260nw-2289604931.jpg" class="card-img-top product-img" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Handbag</h5>
+        <p class="card-text fw-bold">RS. 2000</p>
+        <button class="btn btn-primary">Add to Cart</button>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card h-100">
+      <img src="https://www.shutterstock.com/image-photo/small-pink-handbag-isolated-on-260nw-2676493267.jpg" class="card-img-top product-img" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Handbag</h5>
+        <p class="card-text fw-bold">RS. 1800</p>
+        <button class="btn btn-primary">Add to Cart</button>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card h-100">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZoaP8qcpyAyKnCmiwnsVLoiKDo3Hj1pi2lA&s" class="card-img-top product-img" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Handbag</h5>
+        <p class="card-text fw-bold">RS. 2300</p>
+        <button class="btn btn-primary">Add to Cart</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+</section>
+<!-- offers -->
+<section class="bg-warning text-dark text-center py-5" id="sale">
+    <div class="container">
+        <h1 class="display-4 fw-bold py-4">Up to 50% on your first Orders</h1>
+        <p style="font-size: 24px; font-weight: 300;">Ready to save big? Unlock 50% off when you place your first order.</p>
+        <button class="btn btn-dark btn-lg py-2 px-3">See Deals</button>
+    </div>
+</section>
+<!-- footer -->
+<footer class="bg-dark text-white py-5" id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-2">
+                
+                    <h3 >Bagora</h3>
+                    <p>Meet the bag that carries your whole life, stylishly.</p>
+                
+            </div>
+            <div class="col-md-2">
+                
+                    <h3 >Quick links</h3>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#" style="color:white; text-decoration: none;">Home</a></li>
+                        <li class="mb-2"><a href="#" style="color:white; text-decoration: none;">Products</a></li>
+                        <li class="mb-2"><a href="#" style="color:white; text-decoration: none;">Returns</a></li>
+                        <li class="mb-2"><a href="#" style="color:white; text-decoration: none;">Privacy Policy</a></li>
+                    </ul>
+                
+            </div>
+            <div class="col">
+                <h3>Contact</h3>
+                <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#" style="color:white; text-decoration: none;"><i class="bi bi-telephone me-2"></i>+91 9884444423</a></li>
+                        <li class="mb-2"><a href="#" style="color:white; text-decoration: none;"><i class="bi bi-envelope me-2"></i>helo@Bagora_bags.in</a></li>
+                        
+                        <li class="mb-2"><a href="#" style="color:white; text-decoration: none;"><i class="bi bi-instagram me-2"></i> <i class="bi bi-facebook me-2"></i><i class="bi bi-whatsapp"></i></a></li>
+                        <li class="mb-2"><a href="#" style="color:white; text-decoration: none;"><i class="bi bi-geo-alt me-2"></i>Chennai,Tamilnadu</a></li>
+                        
+                    </ul>
+            </div>
+             
+        </div>
+    </div>
+
+</footer>
+
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</html>
