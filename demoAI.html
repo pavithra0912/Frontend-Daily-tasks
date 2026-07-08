@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Systems Demo</title>
+
+    <style>
+
+        /* UNIVERSAL SELECTOR */
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* BODY SELECTOR */
+        body{
+            font-family: Arial, sans-serif;
+            background-color: rgb(240,240,240);
+            text-align: center;
+            padding: 30px;
+        }
+
+        /* ID SELECTOR */
+        #main-heading{
+            color: #2c3e50;
+            margin-bottom: 20px;
+        }
+
+        /* CLASS SELECTOR */
+        .container{
+            width: 90%;
+            margin: auto;
+        }
+
+        /* ELEMENT SELECTOR */
+        h2{
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+
+        /* BOX DESIGN */
+        .color-box{
+            width: 250px;
+            height: 120px;
+            margin: 20px auto;
+            border-radius: 10px;
+            line-height: 120px;
+            color: white;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        /* RGB COLOR */
+        .rgb-box{
+            background-color: rgb(255,0,0);
+        }
+
+        /* RGBA COLOR */
+        .rgba-box{
+            background-color: rgba(0,128,255,0.6);
+            color: black;
+        }
+
+        /* HEX COLOR */
+        .hex-box{
+            background-color: #8e44ad;
+        }
+
+        /* HSL COLOR */
+        .hsl-box{
+            background-color: hsl(120,70%,40%);
+        }
+
+        /* HWB COLOR */
+        .hwb-box{
+            background-color: hwb(40 10% 20%);
+            color: black;
+        }
+
+        /* BUTTON */
+        button{
+            margin-top: 30px;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 8px;
+            background-color: #ff5722;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        /* HOVER SELECTOR */
+        button:hover{
+            background-color: black;
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <div class="container">
+
+        <h1 id="main-heading">
+            CSS Color Systems Demo
+        </h1>
+
+        <p>
+            This website demonstrates different CSS color systems and selectors.
+        </p>
+
+        <h2>RGB Color</h2>
+        <div class="color-box rgb-box">
+            rgb(255,0,0)
+        </div>
+
+        <h2>RGBA Color</h2>
+        <div class="color-box rgba-box">
+            rgba(0,128,255,0.6)
+        </div>
+
+        <h2>HEX Color</h2>
+        <div class="color-box hex-box">
+            #8e44ad
+        </div>
+
+        <h2>HSL Color</h2>
+        <div class="color-box hsl-box">
+            hsl(120,70%,40%)
+        </div>
+
+        <h2>HWB Color</h2>
+        <div class="color-box hwb-box">
+            hwb(40 10% 20%)
+        </div>
+
+        <button>
+            Learn CSS
+        </button>
+
+    </div>
+
+</body>
+</html>
